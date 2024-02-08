@@ -11,5 +11,10 @@ def roll_dice(num_dice, num_sides):
 
 def dice_roller():
     num_dice, num_sides = get_input()
+    rolls = roll_dice(num_dice, num_sides)
+    display_results(rolls)
+
+def display_results(rolls):
+    print("Results: ", rolls)
 
 dice_roller()
